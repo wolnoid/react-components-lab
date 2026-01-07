@@ -1,4 +1,6 @@
+import './App.css'
 import ForecastComponent from './components/WeatherForecast/WeatherForecast.jsx'
+
 
 const weatherForecasts = [
   {
@@ -42,8 +44,8 @@ const App = () => {
   return (
     <>
       <h1>Local Weather</h1>
-      <section>
-        <ul>
+      <section >
+        <ul id="cards">
           {weatherForecasts.map((forecast) => (
             <ForecastComponent
               key={forecast.id}
